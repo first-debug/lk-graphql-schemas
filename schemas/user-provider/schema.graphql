@@ -1,7 +1,9 @@
 type UserAuthResult {
   email: String!
-  hashPassword: String!
+  # TODO: найти более безопасный способ предоставлять хеш пароля
+  passwordHash: String!
   role: String
+  version: Int
 }
 
 type Query {
