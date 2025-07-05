@@ -1,6 +1,6 @@
 type UserAuthResult {
   email: String!
-  hash_password: String!
+  hashPassword: String!
   role: String
 }
 
