@@ -1,7 +1,7 @@
 type AuthUser{
   id: Int
   email: String 
-  hashPassword: String
+  passwordHash: String
   role: String 
   version: Int
 }
