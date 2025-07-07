@@ -1,10 +1,11 @@
-type UserAuthResult {
-  email: String!
-  passwordHash: String!
-  role: String
+type AuthUser{
+  id: Int
+  email: String 
+  hashPassword: String
+  role: String 
   version: Int
 }
 
 type Query {
-  userAuth(email: String!): UserAuthResult
+  authUser(email: String!): AuthUser
 }
