@@ -1,0 +1,10 @@
+edition = "2023";
+
+package user_provider;
+
+message UserAuthResult {
+  string email = 1;
+  string password_hash = 2;
+  string role = 3;
+  uint32 version = 4;
+}

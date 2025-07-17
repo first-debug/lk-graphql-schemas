@@ -1,0 +1,7 @@
+edition = "2023";
+
+package user_provider;
+
+service UserAuth {
+  rpc Auth(UserAuthRequest) returns (UserAuthResult); 
+}
