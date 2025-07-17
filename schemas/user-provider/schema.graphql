@@ -1,11 +1,11 @@
-type UserAuthResult {
-  email: String!
-  # TODO: найти более безопасный способ предоставлять хеш пароля
-  passwordHash: String!
-  role: String
+type AuthUser{
+  id: Int
+  email: String 
+  passwordHash: String
+  role: String 
   version: Int
 }
 
 type Query {
-  userAuth(email: String!): UserAuthResult
+  authUser(email: String!): AuthUser
 }
